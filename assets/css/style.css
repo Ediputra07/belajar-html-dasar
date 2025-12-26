@@ -1,3 +1,17 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --color-accent: #2563eb;
+
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+
+  --radius: 0.5rem;
+}
+
+
 /* ===== CSS RESET (minimal & modern) ===== */
 *,
 *::before,
@@ -9,8 +23,8 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
-  color: #1f2937; /* neutral dark */
-  background-color: #ffffff;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 main {
@@ -26,6 +40,15 @@ section {
 article {
   margin-top: 1rem;
 }
+
+section,
+article {
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+  border-radius: var(--radius);
+  background: #f9fafb;
+}
+
 
 h1, h2, h3 {
   line-height: 1.25;
@@ -47,7 +70,7 @@ p {
 
 /* ===== Utilities ===== */
 .text-muted {
-  color: #6b7280;
+  color: var(--color-muted);
 }
 
 .text-center {
