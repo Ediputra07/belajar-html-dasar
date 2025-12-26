@@ -5,8 +5,8 @@ body {
   line-height: 1.6;
 }
 
-main{
-  background-color: #ffffff;
+main {
+  background-color: #fff;
   border-radius: 6px;
   max-width: 65ch;
   margin: 0 auto;
@@ -14,14 +14,10 @@ main{
 }
 
 header, footer {
-  display: flex;
-  justify-content: center;
-}
-header h1 {
-  margin: 0;
+  text-align: center;
 }
 
-h1, h2{
+h1, h2 {
   line-height: 1.3;
 }
 
@@ -29,8 +25,20 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-section, article{
+main > p {
+  color: #666;
+}
+
+section, article {
+  margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #e0e0e0;
-  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+}
+
+.article-title {
+  font-size: 1.3rem;
 }
