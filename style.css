@@ -29,10 +29,24 @@ main > p {
   color: #666;
 }
 
-section, article {
+section {
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #e0e0e0;
+}
+
+article {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #ddd;
+}
+
+section > h2 {
+  font-size: 1.2rem;
+}
+
+article > h2 {
+  font-size: 1.35rem;
 }
 
 .section-title {
